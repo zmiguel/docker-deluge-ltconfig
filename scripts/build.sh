@@ -8,7 +8,7 @@ apk update
 
 # Install dependencies
 apk add --no-cache \
-    curl geoip libgcc libstdc++ libffi libjpeg-turbo libtorrent-rasterbar@testing openssl python3 py3-pip py3-libtorrent-rasterbar@testing tzdata zlib unrar 7zr
+    curl geoip libgcc libstdc++ libffi libjpeg-turbo libtorrent-rasterbar@testing openssl python3 py3-pip py3-libtorrent-rasterbar@testing tzdata zlib
 apk add --no-cache --virtual=build-dependencies \
     build-base cargo geoip-dev git libffi-dev libjpeg-turbo-dev openssl-dev python3-dev zlib-dev
 
