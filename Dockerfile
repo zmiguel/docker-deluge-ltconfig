@@ -1,8 +1,8 @@
 FROM alpine:edge
 LABEL maintainer="ZMiguel Valdiviesso <zmiguel.alves@gmail.com>"
 
-ARG LIBTORRENT_VERSION=2.0.6
-ARG DELUGE_VERSION=2.0.5
+ARG LIBTORRENT_VERSION=2.0.7
+ARG DELUGE_VERSION=2.1.1
 
 ENV USER=deluge \
     UID=101 \
