@@ -16,7 +16,7 @@ apk add --no-cache --virtual=build-dependencies \
 cd /tmp
 #git clone git://deluge-torrent.org/deluge.git && cd deluge
 #echo ${DELUGE_VERSION} > RELEASE-VERSION
-git clone --branch master --depth 1 git://deluge-torrent.org/deluge.git && cd deluge
+git clone --branch deluge-${DELUGE_VERSION} --depth 1 git://deluge-torrent.org/deluge.git && cd deluge
 pip3 install --no-cache-dir -U wheel setuptools pip
 pip3 install --no-cache-dir -U -r requirements.txt pygeoip
 python3 setup.py build
