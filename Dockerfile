@@ -5,8 +5,8 @@ ARG LIBTORRENT_VERSION=2.0.8
 ARG DELUGE_VERSION=2.1.1
 
 ENV USER=deluge \
-    UID=101 \
-    GID=101
+    UID=1000 \
+    GID=1000
 
 ADD scripts/*.sh docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/*.sh && build.sh
