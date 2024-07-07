@@ -1,7 +1,7 @@
 FROM alpine:edge
 LABEL maintainer="ZMiguel Valdiviesso <zmiguel.alves@gmail.com>"
 
-ARG LIBTORRENT_VERSION=2.0.9
+ARG LIBTORRENT_VERSION=2.0.10
 ARG DELUGE_VERSION=2.1.1
 
 ENV USER=deluge \
