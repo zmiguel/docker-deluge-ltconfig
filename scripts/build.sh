@@ -17,8 +17,8 @@ cd /tmp
 #git clone git://deluge-torrent.org/deluge.git && cd deluge
 #echo ${DELUGE_VERSION} > RELEASE-VERSION
 git clone --branch ${DELUGE_VERSION} --depth 1 git://deluge-torrent.org/deluge.git && cd deluge
-pip3 install --no-cache-dir -U wheel setuptools pip
-pip3 install --no-cache-dir -U -r requirements.txt pygeoip
+pip3 install --no-cache-dir -U wheel setuptools pip --break-system-packages
+pip3 install --no-cache-dir -U -r requirements.txt pygeoip --break-system-packages
 python3 setup.py build
 python3 setup.py install
 
